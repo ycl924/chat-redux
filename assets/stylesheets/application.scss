@@ -1,7 +1,89 @@
 body {
   font-family: Helvetica;
+
 }
+
+
 .app {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  height: 100vh;
+  .logo-bar {
+    width: 5%;
+    background-color: grey;
+    height: 100%;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .channel-list {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  /* Third column */
+  ul {
+  list-style:none;
+  padding: 0px;
+}
+  .message-list {
+    width: 75%;
+    border-color: yellow;
+    border-style: solid;
+    border-width: 5px;
+    display: flex;
+    flex-direction: column;
+
+    .chatbox {
+      padding: 20px 20px 0 28px;
+      box-sizing: border-box;
+      overflow: scroll;
+      height: 100%;
+
+      .message {
+      padding: 20px;
+
+        .username{
+        font-weight: bold;
+        font-size: 20px;
+        }
+        .time {
+        font-size: 6px;
+        font-style: italic;
+        transform: scale(0.5);
+        }
+        .message-text {
+        font-size: 22px;
+        font-family: monospace;
+        }
+      }
+    }
+    .message-form {
+      display: flex;
+      padding: 20px;
+      box-sizing: border-box;
+      height: 90px;
+      border-top: 1px solid #f4f4f4;
+        input{
+          padding: 10px;
+          width: 90%;
+          height: 100%;
+          border-radius: 2px;
+          border-color: #d4d4d4;
+        }
+        button {
+          padding: 10px 17px;
+          margin-left: -2px;
+          border-radius: 0 2px 2px 0;
+          box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+          border: none;
+          background-color: #D23333;
+          color: white;
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+  }
 }

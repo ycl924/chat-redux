@@ -1,9 +1,16 @@
 import React from 'react';
+import LogoBar from './logobar';
+import ChannelList from './channel_list';
+import MessageList from './message_list';
 
 const App = () => {
+  console.log(process.version);
+
   return (
     <div className="app">
-      <p>React + Redux starter</p>
+      <LogoBar />
+      <ChannelList />
+      <MessageList />
     </div>
   );
 };
